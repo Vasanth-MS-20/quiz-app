@@ -16,7 +16,7 @@ const Content = ({
     
     function handleOptions(e){
         if(qno < (myData.length - 1)){
-            if(e.target.innerText == myData[qno].correctOption){
+            if(e.target.innerText === myData[qno].correctOption){
                 setResult(result + 1)
                 setQno(qno + 1)
                 setTimer(0)
@@ -25,7 +25,7 @@ const Content = ({
             setTimer(0)
         }
         else{
-            if(e.target.innerText == myData[qno].correctOption){
+            if(e.target.innerText === myData[qno].correctOption){
                 setResult(result + 1)
                 setQno(0)
                 setToggleWindow(false)
